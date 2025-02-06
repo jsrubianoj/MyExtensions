@@ -47,8 +47,8 @@ The **Grid-Based Numbering Tool** is a pyRevit extension that automates the numb
 The `parameters.txt` file in this repository includes the shared parameters that need to be added to the Revit model. Ensure that these parameters are loaded into your project for the tool to function correctly. See [Autodesk Revit Official Documentation](https://help.autodesk.com/view/RVT/2021/ENU/?guid=GUID-94EA2B8E-2C00-4D29-8D5A-C7C6664DE9CE) for more information
 
 ## Notes
-- The tool is designed to work with any Revit model that includes grids.
-- If no grids are detected, the tool will prompt the user with an error message.
+- The tool is designed to work with any Revit model that includes grids. **The tool works with Plumbing Equipments but could be modified in the future to match any family instance needed**
+- If no shared parameters file is detected, the tool will prompt the user with an error message.
 - Users are expected to create their own test models for validation.
 
 ## License
