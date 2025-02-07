@@ -6,7 +6,7 @@ The **Grid-Based Numbering Tool** is a pyRevit extension that automates the numb
 ## Features
 - Adds a **"Grid Tools"** tab in pyRevit with a button labeled **"Grid-Based Numbering"**.
 - Verifies if the parameters **"Grid Square"** and **"Number"** exist in the model, and creates them if they do not.
-- Assigns the **Grid Square** parameter to elements based on their closest grid intersection in the format `{Vertical Grid}-{Horizontal Grid}`.
+- Assigns the **Grid Square** parameter to elements (Plumbing Equipments for now) based on their closest grid intersection in the format `{Vertical Grid}-{Horizontal Grid}`.
 - Assigns the **Number** parameter to elements sequentially based on spatial proximity, starting from a user-selected element.
 - Provides a user-friendly interface to select elements and define a starting element interactively.
 - Supports Revit versions **2019-2024**.
@@ -34,14 +34,14 @@ The **Grid-Based Numbering Tool** is a pyRevit extension that automates the numb
 ## Usage
 1. Open a Revit model with grids.
 2. Click **"Grid-Based Numbering"** under the **"Grid Tools"** tab.
-3. Select elements to be modified.
+3. Select elements (Plumbing Equipments) to be modified.
 4. Select a starting element interactively.
 5. The tool will assign **Grid Square** and **Number** values to the selected elements based on their grid location and spatial order.
 
 ## Requirements
 - Revit 2019-2024
 - [pyRevit](https://pyrevitlabs.notion.site/pyRevit-bd907d6292ed4ce997c46e84b6ef67a0) installed and configured
-- A model containing grids and elements (provioded in the zip file)
+- A model containing grids and elements (provided in the zip file)
 
 ## Shared Parameters
 The `parameters.txt` file in this repository includes the shared parameters that need to be added to the Revit model. Ensure that these parameters are loaded into your project for the tool to function correctly. See [Autodesk Revit Official Documentation](https://help.autodesk.com/view/RVT/2021/ENU/?guid=GUID-94EA2B8E-2C00-4D29-8D5A-C7C6664DE9CE) for more information
